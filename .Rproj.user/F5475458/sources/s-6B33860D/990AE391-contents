@@ -1,0 +1,49 @@
+---
+title: "stan4bart"
+---
+
+## Getting Started
+
+The first step to using stan4bart is installing the necessary software on your machine. Often times, this is the hardest part of using stan4bart. The good news is we will only need to do this once...
+
+See details on installing `stan4bart` [here](https://github.com/vdorie/stan4bart)
+
+After you have the necessary gfortran installation. You can run this R code to install `stan4bart`
+
+```{r, eval=FALSE}
+if (length(find.package("remotes", quiet = TRUE)) == 0L)
+  install.packages("remotes")
+remotes::install_github("vdorie/dbarts")
+remotes::install_github("vdorie/stan4bart")
+
+```
+
+After the install is complete you can load the package and start fitting models!
+
+```{r}
+library(stan4bart)
+
+```
+
+## stan4bart for Causal Inference
+
+`stan4bart` has applications for prediction and causal inference tasks. This post will focus on causal inference applications. 
+
+
+
+### Data
+
+We will use data from the [General Social Survey (GSS) administered by NORC](https://gss.norc.org). 
+
+From the 1986 to the present, the GSS has run an ongoing experiment on how the framing of a program effects perceptions around government spending. 
+
+#### Example of a ggplot
+
+```{r}
+x <- rbeta(500, 5, 2)
+tibble(x) |>
+ggplot(aes(x)) + 
+  geom_histogram(col = 'black', fill = 4) + 
+  theme_bw()
+```
+

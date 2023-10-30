@@ -1,0 +1,85 @@
+---
+title: cv
+nav: true
+nav_order: 4
+---
+
+**Email:** gp77@nyu.edu
+
+**Phone:** 734-645-3173
+
+
+## Education
+
+- Master of Science in Applied Statistics, New York University, New York, 2020
+- Master of Public Health in Health Behavior and Health Education, University of Michigan, Ann Arbor, 2018
+- Bachelor of Arts in Psychology, University of Wisconsin, Madison, 2016
+
+
+## Professional Experience
+
+### Visiting Assistant Professor 
+**New York University, NYU | 2023 - Present**
+
+### Director of Research and Data Analysis 
+**New York University PRIISM center, NYU | 2021 - 2023**
+
+- Lead development of thinkCausal a causal inference application for learning causal inference and conducting causal inference analyses.
+
+- Developed and ran simulation studies related to Bayesian Additive Regression Trees (BART), multi‑level models and machine learning.
+
+### Data Science for Social Impact Research Fellow 
+**New York University PRIISM center, NYU | 2020**
+
+- Developed tools to measure and analyze ESG expertise, consensus and understanding among asset managers.
+
+- Wrote Python and R scripts to identify a sampling frame for surveys on restaurant response to COVID‑19 pandemic
+
+### Behavioral Science Research Fellow 
+**Academic Innovation | University of Michigan 2017-2018**
+
+- Collaborated with Physics faculty to run a block randomized trial on a value affirmation intervention comparing in‑person implementation
+against a digital implementation of the intervention.
+
+- Wrote content for personalized communication interventions to increase college student motivation, performance and persistence.
+
+### Research Assistant 
+**Harackiewicz Research Lab | University of Wisconsin 2014-2016**
+
+- Coded and entered data for a field evaluation of brief educational interventions to increase STEM persistence among first generation and under‑represented college students.
+
+- Assisted with data collection and analysis for randomized studies of education interventions aimed at increasing retention rate among community college students across the state of Wisconsin
+
+#### Research Assistant 
+**Niedenthal Emotions Lab | University of Wisconsin 2015-2016**
+
+- Wrote IRB applications, assisted in the development of psychometric measures, oversaw behavioral experiments.
+
+- Conducted literature reviews about affect and decision making, appraisal theory of emotions and functional accounts
+
+## Skills
+
+- **Programming Languages:** 
+  - Expert in R, R Shiny
+  - Proficient with STAN
+  - Proficient in parallel computing techniques and cluster management, enabling efficient and scalable data processing.
+
+- **R package development:** I have authored 4 R package: `thinkCausal`, `nyuCausal`, `plotBart` and `shinyQuiz`. 
+
+
+## Publications
+
+Hill, J., Perrett, G., & Dorie, V. (2023). Machine Learning for Causal Inference. In Handbook of Matching and Weighting Adjustments for Causal Inference (pp. 415-444). Chapman and Hall/CRC.
+
+Dorie, V., Perrett, G., Hill, J. L., & Goodrich, B. (2022). Stan and BART for Causal Inference: Estimating Heterogeneous Treatment Effects Using the Power of Stan and the Flexibility of Machine Learning. Entropy, 24(12), 1782.
+
+Dowell, N. M., McKay, T. A., & Perrett, G. (2021). It's not that you said it, it's how you said it: Exploring the linguistic mechanisms underlying values affirmation interventions at scale. AERA Open, 7, 23328584211011611.
+
+## Awards
+2021 ASH Leadership Award, Awarded in recognition of the highest standard of leadership through initiative, commitment to the improvement of programs or activities, and service to the Department or School.
+
+2016 Brian Hendricks Scholarship, Awarded in recognition of outstanding undergraduate research contribution. Given to an undergraduate RA with exemplary contribution to a psychology research lab.
+
+2016 Athletic Board Scholar, Awarded to the varsity letter winner with the highest GPA
+
+2015 Athletic Board Scholar, Awarded to the varsity letter winner with the highest GPA

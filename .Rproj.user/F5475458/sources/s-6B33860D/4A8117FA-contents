@@ -1,0 +1,17 @@
+---
+title: "papers"
+---
+
+Hill, J., Perrett, G., & Dorie, V. (2023). Machine Learning for Causal Inference. In *Handbook of Matching and Weighting Adjustments for Causal Inference* (pp. 415-444). Chapman and Hall/CRC.
+
+{{< downloadthis papers/BART_intro_chapter-2.pdf dname="BART_intro_chapter.pdf" label="Download Machine Learning for Causal Inference" icon="download" type="primary" >}}
+
+Dorie, V., Perrett, G., Hill, J. L., & Goodrich, B. (2022). Stan and BART for Causal Inference: Estimating Heterogeneous Treatment Effects Using the Power of Stan and the Flexibility of Machine Learning. *Entropy*, *24*(12), 1782.
+
+{{< downloadthis papers/Dorie_2022.pdf dname="Dorie_2022.pdf" label="Download Stan and BART for Causal Inference" icon="download" type="primary" >}}
+
+Dowell, N. M., McKay, T. A., & Perrett, G. (2021). It's not that you said it, it's how you said it: Exploring the linguistic mechanisms underlying values affirmation interventions at scale. *AERA Open*, *7*, 23328584211011611.
+
+{{< downloadthis papers/dowell_2021.pdf dname="dowell_2021.pdf" label="Download It's not that you said it, it's how you said it" icon="download" type="primary" >}}
+
+[test](papers/dowell_2021.pdf)

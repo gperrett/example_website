@@ -1,0 +1,16 @@
+{
+  "hash": "f34bd6c8f679849f16777665e2fb8804",
+  "result": {
+    "markdown": "---\ntitle: \"stan4bart\"\n---\n\n\n## Getting Started\n\nThe first step to using stan4bart is installing the necessary software on your machine. Often times, this is the hardest part of using stan4bart. The good news is we will only need to do this once...\n\nSee details on installing `stan4bart` [here](https://github.com/vdorie/stan4bart)\n\nAfter you have the necessary gfortran installation. You can run this R code to install `stan4bart`\n\n\n::: {.cell}\n\n```{.r .cell-code}\nif (length(find.package(\"remotes\", quiet = TRUE)) == 0L)\n  install.packages(\"remotes\")\nremotes::install_github(\"vdorie/dbarts\")\nremotes::install_github(\"vdorie/stan4bart\")\n```\n:::\n\n\nAfter the install is complete you can load the package and start fitting models!\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(stan4bart)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\nLoading required package: dbarts\n```\n:::\n:::\n\n\n## stan4bart for Causal Inference\n\n`stan4bart` has applications for prediction and causal inference tasks. This post will focus on causal inference applications.\n\n### Data\n\nWe will use data from the [General Social Survey (GSS) administered by NORC](https://gss.norc.org).\n\nFrom the 1986 to the present, the GSS has run an ongoing experiment on how the framing of a program effects perceptions around government spending.\n\n#### Example of a ggplot\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\nx <- rbeta(500, 5, 2)\ntibble(x) |>\nggplot(aes(x)) + \n  geom_histogram(col = 'black', fill = 4) + \n  theme_bw()\n```\n\n::: {.cell-output-display}\n![](stan4bart_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "stan4bart_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

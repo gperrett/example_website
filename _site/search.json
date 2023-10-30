@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "cv",
+    "section": "",
+    "text": "Email: gp77@nyu.edu\nPhone: 734-645-3173"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "cv",
+    "section": "Education",
+    "text": "Education\n\nMaster of Science in Applied Statistics, New York University, New York, 2020\nMaster of Public Health in Health Behavior and Health Education, University of Michigan, Ann Arbor, 2018\nBachelor of Arts in Psychology, University of Wisconsin, Madison, 2016"
+  },
+  {
+    "objectID": "cv.html#professional-experience",
+    "href": "cv.html#professional-experience",
+    "title": "cv",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n\nVisiting Assistant Professor\nNew York University, NYU | 2023 - Present\n\n\nDirector of Research and Data Analysis\nNew York University PRIISM center, NYU | 2021 - 2023\n\nLead development of thinkCausal a causal inference application for learning causal inference and conducting causal inference analyses.\nDeveloped and ran simulation studies related to Bayesian Additive Regression Trees (BART), multi‑level models and machine learning.\n\n\n\nData Science for Social Impact Research Fellow\nNew York University PRIISM center, NYU | 2020\n\nDeveloped tools to measure and analyze ESG expertise, consensus and understanding among asset managers.\nWrote Python and R scripts to identify a sampling frame for surveys on restaurant response to COVID‑19 pandemic\n\n\n\nBehavioral Science Research Fellow\nAcademic Innovation | University of Michigan 2017-2018\n\nCollaborated with Physics faculty to run a block randomized trial on a value affirmation intervention comparing in‑person implementation against a digital implementation of the intervention.\nWrote content for personalized communication interventions to increase college student motivation, performance and persistence.\n\n\n\nResearch Assistant\nHarackiewicz Research Lab | University of Wisconsin 2014-2016\n\nCoded and entered data for a field evaluation of brief educational interventions to increase STEM persistence among first generation and under‑represented college students.\nAssisted with data collection and analysis for randomized studies of education interventions aimed at increasing retention rate among community college students across the state of Wisconsin\n\n\nResearch Assistant\nNiedenthal Emotions Lab | University of Wisconsin 2015-2016\n\nWrote IRB applications, assisted in the development of psychometric measures, oversaw behavioral experiments.\nConducted literature reviews about affect and decision making, appraisal theory of emotions and functional accounts"
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
+    "title": "cv",
+    "section": "Skills",
+    "text": "Skills\n\nProgramming Languages:\n\nExpert in R, R Shiny\nProficient with STAN\nProficient in parallel computing techniques and cluster management, enabling efficient and scalable data processing.\n\nR package development: I have authored 4 R package: thinkCausal, nyuCausal, plotBart and shinyQuiz."
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "cv",
+    "section": "Publications",
+    "text": "Publications\nHill, J., Perrett, G., & Dorie, V. (2023). Machine Learning for Causal Inference. In Handbook of Matching and Weighting Adjustments for Causal Inference (pp. 415-444). Chapman and Hall/CRC.\nDorie, V., Perrett, G., Hill, J. L., & Goodrich, B. (2022). Stan and BART for Causal Inference: Estimating Heterogeneous Treatment Effects Using the Power of Stan and the Flexibility of Machine Learning. Entropy, 24(12), 1782.\nDowell, N. M., McKay, T. A., & Perrett, G. (2021). It’s not that you said it, it’s how you said it: Exploring the linguistic mechanisms underlying values affirmation interventions at scale. AERA Open, 7, 23328584211011611."
+  },
+  {
+    "objectID": "cv.html#awards",
+    "href": "cv.html#awards",
+    "title": "cv",
+    "section": "Awards",
+    "text": "Awards\n2021 ASH Leadership Award, Awarded in recognition of the highest standard of leadership through initiative, commitment to the improvement of programs or activities, and service to the Department or School.\n2016 Brian Hendricks Scholarship, Awarded in recognition of outstanding undergraduate research contribution. Given to an undergraduate RA with exemplary contribution to a psychology research lab.\n2016 Athletic Board Scholar, Awarded to the varsity letter winner with the highest GPA\n2015 Athletic Board Scholar, Awarded to the varsity letter winner with the highest GPA"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "papers.html",
+    "href": "papers.html",
+    "title": "papers",
+    "section": "",
+    "text": "Hill, J., Perrett, G., & Dorie, V. (2023). Machine Learning for Causal Inference. In Handbook of Matching and Weighting Adjustments for Causal Inference (pp. 415-444). Chapman and Hall/CRC.\n Download Machine Learning for Causal Inference \nDorie, V., Perrett, G., Hill, J. L., & Goodrich, B. (2022). Stan and BART for Causal Inference: Estimating Heterogeneous Treatment Effects Using the Power of Stan and the Flexibility of Machine Learning. Entropy, 24(12), 1782.\n Download Stan and BART for Causal Inference \nDowell, N. M., McKay, T. A., & Perrett, G. (2021). It’s not that you said it, it’s how you said it: Exploring the linguistic mechanisms underlying values affirmation interventions at scale. AERA Open, 7, 23328584211011611.\n Download It’s not that you said it, it’s how you said it"
+  },
+  {
+    "objectID": "posts/stan4bart.html",
+    "href": "posts/stan4bart.html",
+    "title": "stan4bart",
+    "section": "",
+    "text": "The first step to using stan4bart is installing the necessary software on your machine. Often times, this is the hardest part of using stan4bart. The good news is we will only need to do this once…\nSee details on installing stan4bart here\nAfter you have the necessary gfortran installation. You can run this R code to install stan4bart\n\nif (length(find.package(\"remotes\", quiet = TRUE)) == 0L)\n  install.packages(\"remotes\")\nremotes::install_github(\"vdorie/dbarts\")\nremotes::install_github(\"vdorie/stan4bart\")\n\nAfter the install is complete you can load the package and start fitting models!\n\nlibrary(stan4bart)\n\nLoading required package: dbarts"
+  },
+  {
+    "objectID": "posts/stan4bart.html#getting-started",
+    "href": "posts/stan4bart.html#getting-started",
+    "title": "stan4bart",
+    "section": "",
+    "text": "The first step to using stan4bart is installing the necessary software on your machine. Often times, this is the hardest part of using stan4bart. The good news is we will only need to do this once…\nSee details on installing stan4bart here\nAfter you have the necessary gfortran installation. You can run this R code to install stan4bart\n\nif (length(find.package(\"remotes\", quiet = TRUE)) == 0L)\n  install.packages(\"remotes\")\nremotes::install_github(\"vdorie/dbarts\")\nremotes::install_github(\"vdorie/stan4bart\")\n\nAfter the install is complete you can load the package and start fitting models!\n\nlibrary(stan4bart)\n\nLoading required package: dbarts"
+  },
+  {
+    "objectID": "posts/stan4bart.html#stan4bart-for-causal-inference",
+    "href": "posts/stan4bart.html#stan4bart-for-causal-inference",
+    "title": "stan4bart",
+    "section": "stan4bart for Causal Inference",
+    "text": "stan4bart for Causal Inference\nstan4bart has applications for prediction and causal inference tasks. This post will focus on causal inference applications.\n\nData\nWe will use data from the General Social Survey (GSS) administered by NORC.\nFrom the 1986 to the present, the GSS has run an ongoing experiment on how the framing of a program effects perceptions around government spending.\n\nExample of a ggplot\n\nlibrary(tidyverse)\nx &lt;- rbeta(500, 5, 2)\ntibble(x) |&gt;\nggplot(aes(x)) + \n  geom_histogram(col = 'black', fill = 4) + \n  theme_bw()"
+  },
+  {
+    "objectID": "posts/bartCause.html",
+    "href": "posts/bartCause.html",
+    "title": "bartCause",
+    "section": "",
+    "text": "Load bartCause\nInsightful text about bartCause\n\nlibrary(bartCause)\nlibrary(plotBart)\nfit &lt;- bartc(response = y, \n             treatment = z, \n             confounders = ., \n             data = gss\n             )\n\nsummary(fit, target = 'sate')\n\nplotBart::plot_SATE(fit) + theme_bw()\n\n\n\nResults"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "George Perrett",
+    "section": "",
+    "text": "George Perrett is an applied statistician based in New York.\nGeorge is an expert in causal inference, Bayesian Additive Regression Trees and R."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "posts",
+    "section": "",
+    "text": "bartCause\n\n\nAn article about using bartCause\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nstan4bart\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]

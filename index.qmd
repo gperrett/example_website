@@ -1,0 +1,14 @@
+---
+title: "George Perrett"
+about:
+  template: jolla
+  image: profile.png
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/gperrett
+---
+
+George Perrett is an applied statistician based in New York.
+
+George is an expert in causal inference, Bayesian Additive Regression Trees and R.

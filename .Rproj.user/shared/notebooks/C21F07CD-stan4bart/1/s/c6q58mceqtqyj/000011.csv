@@ -1,0 +1,8 @@
+"0","tibble(x) |>
+ggplot(aes(x)) + 
+  geom_histogram(col = 'black', fill = 4) + 
+  theme_bw()
+"
+"1","[38;5;250m`stat_bin()` using `bins = 30`. Pick better value with
+`binwidth`.[39m
+"

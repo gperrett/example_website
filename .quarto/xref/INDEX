@@ -1,0 +1,23 @@
+{
+  "index.qmd": {
+    "index.html": "9f3bbe4f"
+  },
+  "about.qmd": {
+    "about.html": "9291ee04"
+  },
+  "papers.qmd": {
+    "papers.html": "3da2fd61"
+  },
+  "posts.qmd": {
+    "posts.html": "9cf7a6b3"
+  },
+  "posts/stan4bart.qmd": {
+    "stan4bart.html": "276141fb"
+  },
+  "posts/bartCause.qmd": {
+    "bartCause.html": "27717792"
+  },
+  "cv.qmd": {
+    "cv.html": "4b2f4a7f"
+  }
+}

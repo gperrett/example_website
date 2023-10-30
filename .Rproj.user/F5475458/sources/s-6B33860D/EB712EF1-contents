@@ -1,0 +1,42 @@
+library(bartCause)
+library(plotBart)
+library(tidyverse)
+# code that takes a very long time to run
+gss <- haven::read_sas('~/Dropbox/talks/Rgov/GSS_sas/gss7222_r1.sas7bdat')
+gss_bakup <- gss
+
+gss <- gss |>
+  filter(YEAR >= 1986, YEAR <=2010) |>
+  select(NATFAREY, YEAR,NATFARE, AGE, EDUC, PARTYID, RACE, REGION, WRKSTAT, ATTEND, INCOM16,INCOME, SEX, RELIG)
+
+gss_dat <- gss |>
+  mutate(z = ifelse(is.na(NATFARE), 1, 0)) |>
+  select(NATFAREY, NATFARE, z, everything()) |>
+  mutate(NATFARE = ifelse(is.na(NATFARE), 0, NATFARE), 
+         NATFAREY = ifelse(is.na(NATFAREY), 0, NATFAREY), 
+         y = NATFARE + NATFAREY
+  ) |>
+  select(NATFAREY, NATFARE, y, z,everything()) |>
+  filter(y > 0)
+
+gss_dat <- gss_dat[!rowSums(sapply(gss_dat, is.na)), ]
+gss_dat <- gss_dat[, 3:15]
+gss_dat$y <- ifelse(gss_dat$y == 3, 1, 0)
+gss_dat$EDUC <- as.factor(gss_dat$EDUC)
+gss_dat$PARTYID <- as.factor(gss_dat$PARTYID)
+gss_dat$RACE <- as.factor(gss_dat$RACE)
+gss_dat$REGION <- as.factor(gss_dat$REGION)
+gss_dat$RACE <- as.factor(gss_dat$RACE)
+gss_dat$WRKSTAT <- as.factor(gss_dat$WRKSTAT)
+gss_dat$INCOM16 <- as.factor(gss_dat$INCOM16)
+gss_dat$INCOME <- as.factor(gss_dat$INCOME)
+gss_dat$SEX <- as.factor(gss_dat$SEX)
+
+
+
+fit <- bartCause::bartc(y, z, confounders = ., data = gss_dat, method.trt = 'none')
+summary(fit, 'sate')
+
+fig1 <- plotBart::plot_SATE(fit) + theme_bw()
+ggsave('figures/bartCause_fig1.png', plot = fig1)
+

@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 040e171a-cd47-45f0-93ee-66aca4759588
+      url: 'https://gperrett.quarto.pub/example_website'

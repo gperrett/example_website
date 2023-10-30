@@ -1,0 +1,31 @@
+---
+title: "bartCause"
+description: 'An article about using bartCause'
+---
+
+### Load bartCause
+
+Insightful text about `bartCause`
+
+```{r, eval=FALSE}
+library(bartCause)
+library(plotBart)
+fit <- bartc(response = y, 
+             treatment = z, 
+             confounders = ., 
+             data = gss
+             )
+
+summary(fit, target = 'sate')
+
+plotBart::plot_SATE(fit) + theme_bw()
+```
+
+### Results
+
+```{r, echo=FALSE}
+
+knitr::include_graphics('~/Dropbox/example_website/figures/bartCause_fig1.png')
+
+
+```

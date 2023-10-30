@@ -1,0 +1,14 @@
+{
+  "hash": "a3b4b902439cb72af8523a9c746405af",
+  "result": {
+    "markdown": "---\ntitle: \"bartCause\"\ndescription: 'An article about using bartCause'\n---\n\n\n### Load bartCause\n\nInsightful text about `bartCause`\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(bartCause)\nlibrary(plotBart)\nfit <- bartc(response = y, \n             treatment = z, \n             confounders = ., \n             data = gss\n             )\n\nsummary(fit, target = 'sate')\n\nplotBart::plot_SATE(fit) + theme_bw()\n```\n:::\n\n\n### Results\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../figures/bartCause_fig1.png){width=1127}\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
